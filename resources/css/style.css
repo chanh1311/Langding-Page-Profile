@@ -1,0 +1,476 @@
+    /********************************Default*****************************/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        background-color: #ffffff;
+        color: #5a5a5a;
+        font-family: 'Lato', sans-serif;
+        font-size: 130%;
+        text-rendering: optimizeLegibility;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    section {
+        padding: 40px;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    /* ---------------------------------------------------Header---------------------------------------------------------------*/
+    
+    header {
+        background-image: linear-gradient(145deg, rgba(2, 33, 65, 0.8) 50%, rgb(45, 95, 93, 0.85)), url("../img/background4.jpeg");
+        background-size: cover;
+        /*dieu chinh kich thuoc thay duoc toan bo buc anh */
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    .icon {
+        width: 330px;
+        margin-top: -50px;
+        margin-left: 30px;
+        float: left;
+    }
+    
+    .list-header {
+        float: right;
+        margin-top: 38px;
+        margin-right: 80px;
+    }
+    
+    .list-header li {
+        display: inline-block;
+        padding-right: 30px;
+    }
+    
+    .list-header li a {
+        color: white;
+        font-weight: 700;
+        font-size: 110%;
+        transition: 0.5s all;
+    }
+    
+    .list-header li a:hover,
+    .list-header li a:active {
+        border-bottom: 2px solid whitesmoke
+    }
+    /* Thanh menu */
+    /* Ngăn cách từng phần */
+    
+    .btn-header {
+        width: 1140px;
+        /* border: 1px solid blue; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-42%, -45%);
+        width: 1140px;
+    }
+    
+    h1 {
+        font-size: 300%;
+        text-transform: uppercase;
+        line-height: 1.5;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        color: white;
+    }
+    
+    .li-btn {
+        border-radius: 20px;
+        display: inline-block;
+        background-color: orange;
+        padding: 20px;
+        margin-right: 15px;
+        text-align: center;
+        transition: 0.3s all;
+    }
+    
+    .li-btn:hover {
+        background-color: orangered;
+    }
+    
+    .btn {
+        width: 130px;
+        display: inline-block;
+        color: white;
+        font-weight: 700;
+    }
+    /* sticky */
+    
+    .sticky {
+        background-color: rgb(35, 35, 105);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        height: 100px;
+        top: 0;
+        left: 0;
+    }
+    /* mobie nav  */
+    
+    .mobile-nav-icon {
+        position: absolute;
+        font-size: 200%;
+        color: rgb(157, 157, 224);
+        top: 35px;
+        right: 50px;
+        display: none;
+    }
+    /**********************About-section***************************/
+    
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(218, 89, 43);
+        font-weight: 700;
+        font-size: 180%;
+        /* margin: 30px 0; */
+        /* padding-top: 30px; */
+        margin-bottom: 40px;
+    }
+    
+    h2::after {
+        display: block;
+        content: " ";
+        width: 150px;
+        background-color: rgba(255, 153, 0, 0.7);
+        height: 3px;
+        margin: 10px auto;
+    }
+    
+    .about-text {
+        text-align: center;
+        font-size: 120%;
+        color: rgb(24, 24, 134);
+        font-weight: 700;
+        margin: 0 auto 80px;
+    }
+    
+    #about-section .about-picture {
+        position: relative;
+    }
+    
+    #about-section img {
+        width: 90%;
+        border-radius: 20px;
+        border: 3px solid rgb(133, 133, 196);
+        box-shadow: 0px 5px 15px 5px rgb(79, 79, 138);
+        /* x-y-độ mờ-đọ phóng rộng-màu */
+        transition: 1.s all;
+    }
+    
+    .about-picture:hover img,
+    .about-picture:active img {
+        /* opacity: 0.4; */
+        filter: brightness(45%) blur(2px);
+    }
+    
+    .about-picture .about-title {
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-weight: 500;
+        opacity: 0;
+        transform: translate(-60%, 80%);
+        transition: 1s all;
+    }
+    
+    .about-picture:hover .about-title,
+    .about-picture:active .about-title {
+        opacity: 1;
+        transform: translate(-65%, -10%);
+        color: white;
+        cursor: pointer;
+    }
+    /****************Product*******************/
+    
+    #product-section {
+        background-color: rgb(240, 237, 237);
+    }
+    
+    #product-section h2 {
+        margin-bottom: 30px;
+        /* font-size: 30px; */
+    }
+    
+    .product-box {
+        background-color: rgb(255, 238, 238);
+        font-size: 118%;
+        width: 90%;
+        height: 350px;
+        /* border: 1px soild red; */
+        box-shadow: 3px 5px 10px #e0e0e0;
+    }
+    
+    .product-box h3 {
+        font-size: 90%;
+        color: white;
+        text-transform: uppercase;
+        background-color: rgb(17, 17, 95);
+        text-align: center;
+        padding: 25px 0 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .product-box p {
+        font-size: 50px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .product-list i {
+        margin-right: 5px;
+    }
+    
+    .product-box .product-list {
+        padding-left: 52px;
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+    
+    .product-box .li-btn {
+        width: 180px;
+        display: block;
+        padding: 13px;
+        margin: 0 auto;
+        /* chi lam viec voi display block */
+    }
+    /**********************testimonials **************************/
+    
+    #testimonials {
+        background-image: linear-gradient(145deg, rgba(2, 33, 65, 0.8) 50%, rgb(45, 95, 93, 0.85)), url("../img/background2.jpeg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .testimonials h2 {
+        margin-bottom: 100px;
+    }
+    
+    #testimonials blockquote {
+        color: white;
+        font-style: italic;
+        line-height: 150%;
+        font-weight: 700;
+        font-size: 90%;
+    }
+    
+    cite {
+        display: block;
+        margin-top: 10px;
+        color: rgb(165, 165, 206);
+    }
+    
+    cite img {
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgb(116, 116, 223);
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    #testimonials blockquote::before {
+        content: "\0022";
+        display: block;
+        font-size: 400%;
+        font-weight: 800;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+    }
+    
+    .testimonial-col {
+        position: relative;
+    }
+    /* --------------Sponsors-------------------*/
+    
+    #product-section {
+        background-color: #e4e4e4;
+    }
+    
+    #sponsor-section h1 {
+        margin-bottom: 55px;
+    }
+    
+    #sponsor-section .logo-picture {
+        width: 140px;
+        /* border: 1px solid red; */
+    }
+    
+    #sponsor-section .list-logo li {
+        float: left;
+        width: 33%;
+        text-align: center;
+        margin-bottom: 25px;
+        /* border: 1px solid red; */
+    }
+    
+    #sponsor-section .list-logo li:hover,
+    #sponsor-section .list-logo li:active {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    figcaption {
+        font-size: 150%;
+        font-weight: 800;
+        color: rgb(36, 27, 27);
+    }
+    /* **********CONTACT*********** */
+    
+    #contact {
+        background-image: linear-gradient(145deg, rgba(2, 33, 65, 0.8) 50%, rgb(45, 95, 93, 0.85)), url("../img/background5.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    .information {
+        color: white;
+        margin-top: 35px;
+        line-height: 200%;
+        font-weight: 700;
+    }
+    
+    .information i {
+        margin-right: 10px;
+        color: rgb(22, 190, 190);
+    }
+    
+    .information i:hover,
+    .information i:active {
+        transform: scale(1.3);
+        color: beige;
+    }
+    
+    #contact .logo {
+        margin-top: 50px;
+    }
+    
+    #contact .logo li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    #contact .logo li i {
+        color: white;
+        font-size: 250%;
+    }
+    
+    #contact .logo li i:hover,
+    #contact .logo li i:active {
+        transform: scale(1.2);
+        color: orange;
+    }
+    /******************* formmmmmm ************************/
+    
+    .form {
+        background-color: rgba(33, 35, 37, 0.4);
+        min-width: 68%;
+        margin-left: 40%;
+        height: 400px;
+        padding: 20px;
+    }
+    
+    .form .row {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    input {
+        height: 50px;
+    }
+    
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    .form input,
+    textarea {
+        padding: 10px;
+        width: 80%;
+    }
+    
+    .form label {
+        color: white;
+        font-size: 150%;
+        font-weight: 700;
+    }
+    
+    .form .row:last-child {
+        text-align: center;
+    }
+    
+    .form .li-btn {
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 100%;
+        cursor: pointer;
+        width: 50%;
+    }
+    
+    input[type=email],
+    input[type=text],
+    textarea {
+        font-size: 80%;
+        transition: 0.3s all;
+        font-size: 100%;
+    }
+    
+    input[type=email]:focus,
+    input[type=text]:focus,
+    textarea:focus {
+        color: white;
+        background-color: rgb(224, 219, 224);
+    }
+    
+    input[type=submit] {
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 100%;
+        cursor: pointer;
+        width: 60%;
+    }
+    /********footer **************/
+    
+    footer {
+        background-color: #332b2b;
+        color: white;
+        width: 700;
+        font-size: 110%;
+        text-align: center;
+        padding: 20px;
+    }

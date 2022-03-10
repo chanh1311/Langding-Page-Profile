@@ -1,0 +1,258 @@
+                        /* Big tablet to 1200px; */
+                        
+                        @media only screen and (max-width:1200px) {
+                            /* default  */
+                            html {
+                                font-size: 115%;
+                            }
+                            /* header */
+                            .icon {
+                                margin-top: -60px;
+                            }
+                            .btn-header {
+                                transform: translate(-30%, -45%);
+                            }
+                            /* product */
+                            .product-box {
+                                width: 100%;
+                            }
+                            /* contact */
+                            .form {
+                                margin-left: 30%;
+                            }
+                        }
+                        /* Small tablet to big tablet from 768x to 1023px */
+                        
+                        @media only screen and (max-width:1023px) {
+                            /* default */
+                            html {
+                                font-size: 100%;
+                            }
+                            .mobile-nav-icon {
+                                display: none !important;
+                            }
+                            /* header */
+                            .icon {
+                                width: 280px;
+                                margin-top: -40px;
+                            }
+                            .list-header {
+                                margin-right: 10px;
+                            }
+                            .list-header li {
+                                padding: 10px;
+                            }
+                            .btn-header {
+                                transform: translate(-27%, -45%);
+                            }
+                            .btn-header h1 {
+                                font-size: 280%;
+                            }
+                            /* product */
+                            .product-box {
+                                width: 100%;
+                                height: 300px;
+                            }
+                            .product-box p {
+                                font-size: 35px;
+                            }
+                            .product-box .product-list {
+                                padding-left: 7%;
+                                font-size: 90%;
+                            }
+                            /* contact */
+                            .information i {
+                                display: block;
+                            }
+                            #contact .logo li {
+                                margin-right: 15px;
+                            }
+                            /* form */
+                            .form {
+                                margin-left: 20%;
+                                height: 400px;
+                                padding: 20px;
+                                /* min-width: 80%; */
+                                max-width: 80%;
+                            }
+                            .form label {
+                                font-size: 130%;
+                            }
+                        }
+                        /* Small phones to small tablets */
+                        
+                        @media only screen and (max-width: 767px) {
+                            /* default */
+                            html {
+                                font-size: 90%;
+                            }
+                            .col {
+                                width: 100%;
+                            }
+                            /*********************** header **************/
+                            .icon {
+                                width: 260px;
+                                margin-top: -40px;
+                            }
+                            .list-header {
+                                display: none;
+                            }
+                            .btn-header {
+                                transform: translate(-15%, -45%);
+                            }
+                            .btn-header h1 {
+                                font-size: 230%;
+                                line-height: 1.1;
+                                word-spacing: 3px;
+                            }
+                            .btn-header .li-btn {
+                                display: block;
+                                width: 150px;
+                                margin-bottom: 10px;
+                                margin-top: 20px;
+                                margin-left: 5%;
+                                border-radius: 3px;
+                            }
+                            .btn-header .li-btn a {
+                                margin: 0 auto;
+                                display: inline;
+                                font-size: 20px;
+                            }
+                            /* nav mobie */
+                            .list-header {
+                                display: none;
+                                right: 0px;
+                                top: 30px;
+                                background-color: rgba(216, 216, 228, 0.1);
+                                height: 200px;
+                                position: absolute;
+                            }
+                            .list-header li {
+                                display: block;
+                            }
+                            .list-header li a {
+                                color: burlywood;
+                            }
+                            .list-header li a:hover {
+                                background-color: rgb(37, 36, 36);
+                            }
+                            .mobile-nav-icon {
+                                display: block !important;
+                            }
+                            /* about-us */
+                            #about-section img {
+                                margin-left: 20%;
+                                width: 60%;
+                            }
+                            .about-picture .about-title {
+                                font-size: 25px;
+                            }
+                            /* product-section */
+                            .product-box {
+                                width: 50%;
+                                margin-left: 25%;
+                                margin-bottom: 25px;
+                            }
+                            .product-box .product-list {
+                                max-width: 80%;
+                                margin-left: 10%;
+                                font-weight: 800;
+                                font-size: 18px;
+                            }
+                            .product-box .product-cost {
+                                color: rgb(15, 15, 85);
+                            }
+                            .product-box .li-btn {
+                                width: 80%;
+                            }
+                            /* testimonicals */
+                            blockquote {
+                                margin-bottom: 50px;
+                            }
+                            /* contact */
+                            .contact .information {
+                                text-align: center;
+                            }
+                            .contact .logo {
+                                text-align: center;
+                                margin-bottom: 30px;
+                            }
+                            /* form */
+                            .form {
+                                width: 100%;
+                                margin-left: 10%;
+                                height: 450px;
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 450px) {
+                            /* default */
+                            html {
+                                font-size: 75%;
+                            }
+                            /* header */
+                            .icon {
+                                width: 200px;
+                                margin-top: -20px;
+                                margin-left: 5px;
+                            }
+                            .btn-header {
+                                transform: translate(-10%, -45%);
+                            }
+                            .btn-header h1 {
+                                font-size: 150%;
+                                word-spacing: 0px;
+                                line-height: 1.3;
+                            }
+                            .btn-header .li-btn {
+                                margin-left: 2%;
+                                width: 130px;
+                                padding: 10px;
+                            }
+                            .btn-header .li-btn a {
+                                font-size: 15px;
+                            }
+                            /* product-section */
+                            .product-box {
+                                width: 80%;
+                                margin-left: 5%;
+                            }
+                            .product-box .product-cost {
+                                font-size: 30px;
+                                color: rgb(12, 12, 88);
+                            }
+                            .product-box .product-list {
+                                font-weight: 900;
+                                font-size: 16px;
+                            }
+                            .product-box .li-btn {
+                                text-align: center;
+                            }
+                            .product-box .li-btn a {
+                                display: inline;
+                            }
+                            /* sponsors */
+                            .sponsor-section figcaption {
+                                display: none;
+                            }
+                            .list-logo {
+                                width: 100%;
+                                margin: 0 auto;
+                            }
+                            /* .row {
+                                background-color: red;
+                            } */
+                            .form {
+                                width: 100%;
+                            }
+                            input {
+                                width: 100%;
+                                height: 40px;
+                            }
+                            textarea {
+                                height: 80px;
+                            }
+                            .form .li-btn {
+                                width: 100px;
+                            }
+                        }
